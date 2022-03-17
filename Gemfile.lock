@@ -65,6 +65,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    bcrypt (3.1.17)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -106,6 +107,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.1.5)
@@ -160,16 +163,15 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.13)
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   byebug
-
   faker (~> 2.20)
-
   jwt (~> 2.3)
-
   listen (~> 3.3)
   pg (~> 1.1)
   puma (~> 5.0)
+  rack-cors
   rails (~> 6.1.5)
   spring
   tzinfo-data
