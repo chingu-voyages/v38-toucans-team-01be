@@ -7,6 +7,7 @@ class CreateContacts < ActiveRecord::Migration[6.1]
       t.text :email
       t.text :address
       t.text :notes
+      t.integer :user_id
 
       t.timestamps
     end
