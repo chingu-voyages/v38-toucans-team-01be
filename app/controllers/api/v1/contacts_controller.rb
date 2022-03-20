@@ -1,4 +1,5 @@
 class Api::V1::ContactsController < ApplicationController
+  before_action :set_user
   before_action :set_contact, only: [:show, :update, :destroy]
 
   # GET /contacts
@@ -15,7 +16,7 @@ class Api::V1::ContactsController < ApplicationController
 
   # POST /contacts
   def create
-    @contact = Contact.new(contact_params)
+    @contact = @user.contacts.new(contact_params)
 
     if @contact.save
       render json: @contact, status: :created, location: @contact
@@ -44,8 +45,12 @@ class Api::V1::ContactsController < ApplicationController
       @contact = Contact.find(params[:id])
     end
 
+    def set_user
+      @user = User.find_by(params[:user_id]) 
+    end
+
     # Only allow a list of trusted parameters through.
     def contact_params
-      params.require(:contact).permit(:name, :birthday, :number, :email, :address, :notes)
+      params.require(:contact).permit(:name, :birthday, :number, :email, :address, :notes, :user_id)
     end
 end
