@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2022_03_18_003306) do
     t.text "email"
     t.text "address"
     t.text "notes"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
