@@ -1,24 +1,33 @@
-# README
+# Durante 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+(server side) 
 
-Things you may want to cover:
+description here
 
-* Ruby version
+## Installation
 
-* System dependencies
+1. Use this command in the terminal to install the dependencies specified in the Gemfile.
 
-* Configuration
+```bash
+bundle install
+```
 
-* Database creation
+2. To initialize the database and create the schema, use command in the terminal:
 
-* Database initialization
+```bash
+rails db:migrate
+```
 
-* How to run the test suite
+3. To start the rails server, use command:
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+rails s
+```
 
-* Deployment instructions
+## Contributors
+* [Luis Castillo](https://github.com/LuisCastilloKC) 
+* [Ifeoluwa Akinremi-Wade](https://github.com/IfeAkiWad)
+* [Jim Medlock](https://github.com/jdmedlock)
 
-* ...
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
