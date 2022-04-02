@@ -8,6 +8,11 @@ description here
 
 1. Use this command in the terminal to install the dependencies specified in the Gemfile.
 
+Be sure that these gems are enabled before installing:
+
+* [rack-cors](https://github.com/cyu/rack-cors)
+* [bcrypt](https://github.com/bcrypt-ruby/bcrypt-ruby)
+
 ```bash
 bundle install
 ```
@@ -23,6 +28,11 @@ rails db:migrate
 ```bash
 rails s
 ```
+
+## Dependencies
+
+* [jwt](https://github.com/jwt/ruby-jwt)
+* [active_model_serializers](https://api.rubyonrails.org/classes/ActiveModel/Serialization.html)
 
 ## Contributors
 * [Luis Castillo](https://github.com/LuisCastilloKC) 
