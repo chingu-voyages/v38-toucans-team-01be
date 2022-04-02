@@ -13,6 +13,7 @@ description here
     * [rack-cors](https://github.com/cyu/rack-cors)
     * [bcrypt](https://github.com/bcrypt-ruby/bcrypt-ruby)
 
+    Run in the terminal:
 
     ```bash
     bundle install
