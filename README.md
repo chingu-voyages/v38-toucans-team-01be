@@ -8,26 +8,26 @@ description here
 
 1. Use this command in the terminal to install the dependencies specified in the Gemfile.
 
-Be sure that these gems are enabled before installing:
+    Be sure that these gems are enabled before installing:
 
-* [rack-cors](https://github.com/cyu/rack-cors)
-* [bcrypt](https://github.com/bcrypt-ruby/bcrypt-ruby)
+    * [rack-cors](https://github.com/cyu/rack-cors)
+    * [bcrypt](https://github.com/bcrypt-ruby/bcrypt-ruby)
 
-```bash
-bundle install
-```
+    ```bash
+    bundle install
+    ```
 
 2. To initialize the database and create the schema, use command in the terminal:
 
-```bash
-rails db:migrate
-```
+    ```bash
+    rails db:migrate
+    ```
 
 3. To start the rails server, use command:
 
-```bash
-rails s
-```
+    ```bash
+    rails s
+    ```
 
 ## Dependencies
 
