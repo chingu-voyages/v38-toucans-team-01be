@@ -1,9 +1,11 @@
 # Durante 
 
+## About
+
 ## Overview
 (server side) 
 
-description here
+description of backend here
 
 ### Features
 
