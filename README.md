@@ -6,7 +6,7 @@ description here
 
 ## Installation
 
-1. Use this command in the terminal to install the dependencies specified in the Gemfile.
+1. Install the dependencies specified in the Gemfile.
 
     Be sure that these gems are enabled before installing:
 
