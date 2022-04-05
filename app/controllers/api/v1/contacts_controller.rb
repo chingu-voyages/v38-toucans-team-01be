@@ -11,6 +11,7 @@ class Api::V1::ContactsController < ApplicationController
 
   # GET /contacts/1
   def show
+    contact = Contact.find(params[:id])
     render json: contact
   end
 
