@@ -1,26 +1,43 @@
 class Api::V1::UsersController < ApplicationController
-    skip_before_action :authorized, only: [:create]
+    skip_before_action :authorized, except: [:auto_login]
 
+    def index
+     user = User.all 
+     render json: user
+    end
+ 
     def create
-        @user = User.create(user_params)
-        if @user.valid?
-            @token = encode_token(user_id: @user.id)
-            render json: {
-                 user: UserSerializer.new(@user), 
-                 jwt: @token,
-                },
-                status: :created
-        else
-            render json: {
-                error: "failed to create user",
-            },
-            status: :unprocessable_entity
-        end
-    end
-
-    private
-
-    def user_params
-        params.require(:user).permit(:username, :password, :avatar)
-    end
+     user = User.create(user_params)
+     if user.valid?
+       payload = {user_id: user.id}
+       token = encode_token(payload)
+        render json: {user: user, jwt: token},status: :created
+     else
+       render json: {errors: user.errors.full_messages}
+     end
+   end
+ 
+   def login
+     user = User.find_by(username: params[:user][:username])
+ 
+     if user && user.authenticate(params[:user][:password])
+       
+        payload = {user_id: user.id}
+       token = encode_token(payload)
+      
+       render json: {user: user, jwt: token}
+     else
+       render json: {error: "Invalid username or password"}
+     end
+   end
+ 
+   def auto_login
+       render json: current_user
+   end
+ 
+   private
+ 
+     def user_params
+       params.require(:user).permit( :username, :password)
+     end
 end

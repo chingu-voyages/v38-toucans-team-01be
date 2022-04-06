@@ -1,3 +1,3 @@
 class ContactSerializer < ActiveModel::Serializer
-  attributes :id, :name, :birthday, :number, :email, :address, :notes
+  attributes :id, :firstname, :lastname, :birthday, :phonenumber, :email, :instagram, :facebook, :twitter, :notes, :user_id
 end
