@@ -9,8 +9,14 @@
 
 ## Overview
 (server side) 
+ 
+* Rails API server
+* postgressql database
+* Follows Rails MVC and RESTful conventions
+* JSON Web Tokens authentication
 
-description of backend here
+
+[client side](https://github.com/chingu-voyages/v38-toucans-team-01)
 
 ## Installation
 
