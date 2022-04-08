@@ -14,10 +14,9 @@
 
 # Contact.create(name: "react", birthday: '1995-12-25', number:"1234567879", email:"example@example.com", address: "Brooklyn, NY", notes: "Another note testing", user_id: user.id)
 
-user3 = User.create(username: "mike", password_digest: "1234")
+# user3 = User.create(username: "mike", password_digest: "1234")
 
-contact1 = Contact.create(firstname: "frank", lastname: "smith", email: "frank@gmail.com", phonenumber: "123-456-7890", instagram: "frankInstegram", facebook: "frankFacebook", twitter: "frankTwitter", birthday: "1980-09-21", notes: "This is a note about the about frank contact", user_id: user3.id)
+Contact.create(firstname: "frank", lastname: "smith", email: "frank@gmail.com", phonenumber: "123-456-7890", instagram: "frankInstegram", facebook: "frankFacebook", twitter: "frankTwitter", birthday: "1980-09-21", notes: "This is a note about the about frank contact", user_id: 3)
 
-user4 = User.create(username: "mike1", password_digest: "1234")
-
-contact1 = Contact.create(firstname: "frank1", lastname: "smith", email: "frank@gmail.com", phonenumber: "123-456-7890", instagram: "frankInstegram", facebook: "frankFacebook", twitter: "frankTwitter", birthday: "1980-09-21", notes: "This is a note about the about frank contact", user_id: user4.id)
+# user4 = User.create(username: "mike1", password_digest: "1234")
+Contact.create(firstname: "frank1", lastname: "smith", email: "frank@gmail.com", phonenumber: "123-456-7890", instagram: "frankInstegram", facebook: "frankFacebook", twitter: "frankTwitter", birthday: "1980-09-21", notes: "This is a note about the about frank contact", user_id: 3)

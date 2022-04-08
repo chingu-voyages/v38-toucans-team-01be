@@ -18,6 +18,11 @@ Durante is a phone book web app ideal for students and working professionals. Yo
 
 ## Overview
 (server side) 
+ 
+* Rails API server
+* postgressql database
+* Follows Rails MVC and RESTful conventions
+* JSON Web Tokens authentication
 
 
 [client side](https://github.com/chingu-voyages/v38-toucans-team-01)
