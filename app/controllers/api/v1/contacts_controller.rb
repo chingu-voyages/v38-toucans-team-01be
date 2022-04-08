@@ -4,7 +4,7 @@ class Api::V1::ContactsController < ApplicationController
   skip_before_action :authorized
   # GET /contacts
   def index
-    contacts = Contact.all
+    contacts = current_user.contacts
 
     render json: contacts
   end
@@ -17,10 +17,10 @@ class Api::V1::ContactsController < ApplicationController
 
   # POST /contacts
   def create
-    contact = user.contacts.new(contact_params)
+    contact = current_user.contacts.new(contact_params)
 
     if contact.save
-      render json: contact, status: :created, location: contact
+      render json: contact, status: :created
     else
       render json: contact.errors, status: :unprocessable_entity
     end
@@ -43,7 +43,7 @@ class Api::V1::ContactsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_contact
-      contact = Contact.find_by(params[:id])
+      contact = Contact.where(params[:id])
     end
 
     def set_user

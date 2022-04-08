@@ -21,3 +21,4 @@ contact1 = Contact.create(firstname: "frank", lastname: "smith", email: "frank@g
 user4 = User.create(username: "mike1", password_digest: "1234")
 
 contact1 = Contact.create(firstname: "frank1", lastname: "smith", email: "frank@gmail.com", phonenumber: "123-456-7890", instagram: "frankInstegram", facebook: "frankFacebook", twitter: "frankTwitter", birthday: "1980-09-21", notes: "This is a note about the about frank contact", user_id: user4.id)
+user4.contacts.create(firstname: "frank1", lastname: "smith", email: "frank@gmail.com", phonenumber: "123-456-7890", instagram: "frankInstegram", facebook: "frankFacebook", twitter: "frankTwitter", birthday: "1980-09-21", notes: "This is a note about the about frank contact")
