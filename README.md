@@ -27,7 +27,7 @@ Durante is a phone book web app ideal for students and working professionals. Yo
 * JSON Web Tokens authentication
 
 
-[client side](https://github.com/chingu-voyages/v38-toucans-team-01)
+[client side repo](https://github.com/chingu-voyages/v38-toucans-team-01)
 
 ## Installation
 
