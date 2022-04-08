@@ -13,8 +13,10 @@ Durante is a phone book web app ideal for students and working professionals. Yo
 - [x] A form to store a new contact
 - [x] Responsive design
 
-#### LIVE LINK
+#### LIVE LINKS
 
+[login/sign up page](https://toucan-landing.netlify.app/) | 
+[contacts page](https://toucan-main.netlify.app/)
 
 ## Overview
 (server side) 
