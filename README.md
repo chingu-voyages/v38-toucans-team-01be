@@ -6,8 +6,8 @@ Durante is a phone book web app ideal for students and working professionals. Yo
 
 ### Features
 
-- [x] Ability to sign up, log in and log out
-- [x] Ability to create, edit and delete a contact
+- [x] Ability to sign up, log in, and log out
+- [x] Ability to create, edit, and delete a contact
 - [x] “Favorite” section for family and friends
 - [x] “Network” section for colleagues and coworkers (ex. LinkedIn)
 - [x] Search engine for quick contact search
