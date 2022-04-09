@@ -52,6 +52,6 @@ class Api::V1::ContactsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def contact_params
-      params.require(:contact).permit(:firstname, :lastname, :birthday, :phonenumber, :email, :instagram, :facebook, :twitter, :notes, :user_id)
+      params.require(:contact).permit(:firstname, :lastname, :birthday, :phonenumber, :email, :instagram, :facebook, :twitter, :notes, :favorite, :profnetwork, :user_id)
     end
 end
