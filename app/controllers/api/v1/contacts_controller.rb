@@ -37,6 +37,7 @@ class Api::V1::ContactsController < ApplicationController
 
   # DELETE /contacts/1
   def destroy
+    contact = Contact.find(params[:id])
     contact.destroy
   end
 
