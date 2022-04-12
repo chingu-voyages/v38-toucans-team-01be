@@ -4,7 +4,7 @@ class Api::V1::ContactsController < ApplicationController
   skip_before_action :authorized
   # GET /contacts
   def index
-    contacts = current_user.contacts
+    contacts = Contact.all
 
     render json: contacts
   end
@@ -17,7 +17,7 @@ class Api::V1::ContactsController < ApplicationController
 
   # POST /contacts
   def create
-    contact = current_user.contacts.new(contact_params)
+    contact = user.contacts.new(contact_params)
 
     if contact.save
       render json: contact, status: :created
