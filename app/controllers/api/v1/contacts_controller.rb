@@ -4,7 +4,7 @@ class Api::V1::ContactsController < ApplicationController
   skip_before_action :authorized
   # GET /contacts
   def index
-    contacts = Contact.all
+    contacts = current_user&.contacts || []
 
     render json: contacts
   end
