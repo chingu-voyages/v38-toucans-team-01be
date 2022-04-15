@@ -18,8 +18,7 @@ Durante is a phone book web app ideal for students and working professionals. Yo
 
 #### LIVE LINKS
 
-[login/sign up page](https://toucan-landing.netlify.app/) | 
-[contacts page](https://toucan-main.netlify.app/)
+[DURANTE](https://durante-main.herokuapp.com/login.html) 
 
 ## Overview
 (server side) 
